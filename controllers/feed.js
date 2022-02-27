@@ -1,5 +1,5 @@
 
-exports.getPosts = (req, res, next) => {
+exports.getData = (req, res, next) => {
     res.status(200).json({
         posts: [{
             professionalName: professionalName, 
@@ -14,7 +14,7 @@ exports.getPosts = (req, res, next) => {
 };
 
 //-----------------------POST------------------------------
-exports.postPost = (req, res, next) => {
+exports.postData = (req, res, next) => {
     const professionalName = req.body.professionalName;
     const image = req.body.image;
     const primaryDescription = req.body.primaryDescription;
